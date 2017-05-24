@@ -162,6 +162,22 @@ hr.small {
     -o-background-size: cover;
 }
 
+img.profile-img{
+    margin: 0px;
+}
+
+p.lead{
+    text-align: left;
+    width: 60%;
+    float:right;
+}
+.second-p{
+    margin-top: 90px;
+}
+.about-text{
+    /*float: right;*/
+    width: 100%;
+}
 /* About */
 
 .about {
@@ -256,21 +272,6 @@ td {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-.map iframe {
-    pointer-events: none;
-}
 
 /* Footer */
 
