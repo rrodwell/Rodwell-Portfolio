@@ -188,7 +188,7 @@ p.lead{
 
 .technologies {
     padding: 50px 0;
-    background-color: #293952;
+    background-color: #303030;
 }
 
 /* Makes Devicons bigger */
@@ -267,7 +267,7 @@ td {
 
 .call-to-action {
     padding: 50px 0;
-    background-color: #293952;
+    background-color: #303030;
 }
 
 .call-to-action .btn {
@@ -279,10 +279,13 @@ td {
 
 footer {
     padding: 40px 0;
+    color: #293952;
 }
+
 
 #resume{
     font-size: 24px;
+    color: #293952;
 }
 
 #to-top {
