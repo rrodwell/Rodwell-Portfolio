@@ -162,27 +162,33 @@ hr.small {
     -o-background-size: cover;
 }
 
-img.profile-img{
-    margin: 0;
-}
-
-p.lead{
-    text-align: left;
-    width: 60%;
-    float:right;
-}
-.second-p{
-    margin-top: 90px;
-}
-.about-text{
-    /*float: right;*/
-    width: 100%;
-}
 /* About */
 
 .about {
     padding: 50px 0;
 }
+
+div.container.about-img{
+    float: left;
+    width: 40%;
+    margin-bottom: 30px;
+
+}
+
+img.profile-img {
+    float: left;
+    width: 400px;
+}
+
+
+.about-info{
+    float: right;
+    width: 60%;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+
 
 /* Technolgies */
 
@@ -293,4 +299,25 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+/*Media Queries*/
+@media (max-width: 1200px) {
+    div.container.about-img{
+        float: left;
+        width: 40%;
+        margin-bottom: 50px;
+
+    }
+
+    img.profile-img{
+        width: 400px;
+    }
+
+    .about-info{
+        float: right;
+        width: 60%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
 }
