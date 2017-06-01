@@ -321,3 +321,22 @@ footer {
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 990px) {
+    div.container.about-img{
+        width: 100%;
+        margin-bottom: 30px;
+        align: middle;
+    }
+
+    img.profile-img{
+        width: 100%;
+    }
+
+    .about-info{
+        float: right;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
