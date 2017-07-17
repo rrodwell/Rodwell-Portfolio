@@ -301,6 +301,10 @@ footer {
   right: 5px;
 }
 
+#videoPlayer{
+    padding-top: 85px;
+}
+
 /*Media Queries*/
 @media (max-width: 1200px) {
     div.container.about-img{
