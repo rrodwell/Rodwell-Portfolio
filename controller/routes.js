@@ -9,8 +9,8 @@ router.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-router.get("/videos/burger_demo", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/videos/burger_demo.html"));
+router.get("/videos/advancedtrivia", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/videos/advancedtrivia.html"));
 });
 
 
