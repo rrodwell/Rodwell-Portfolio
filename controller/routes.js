@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
 });
 
 router.get("/videos/burger_demo", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/videos/burger_demo.mp4"));
+    res.sendFile(path.join(__dirname, "../public/videos/burger_demo.html"));
 });
 
 
