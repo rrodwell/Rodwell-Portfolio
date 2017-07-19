@@ -13,8 +13,12 @@ router.get("/videos/advancedtrivia", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/videos/advancedtrivia.html"));
 });
 
-router.get("/videos/psychicgame", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/videos/psychicgame.html"));
+router.get("/videos/signaturefd", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/videos/signaturefd.html"));
+});
+
+router.get("/videos/bamazon", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/videos/bamazon.html"));
 });
 
 router.get("/videos/illegalformation", function(req, res) {
@@ -25,8 +29,8 @@ router.get("/videos/stylecast", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/videos/stylecast.html"));
 });
 
-router.get("/videos/liri", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/videos/liri.html"));
+router.get("/videos/cheeriomongo", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/videos/cheeriomongo.html"));
 });
 
 router.get("/videos/flashcards", function(req, res) {
