@@ -1,40 +1,113 @@
-/*!
- * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-/* Global Styles */
-
-html,
-body {
+html {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+
+header, main, footer, .page-footer {
+    padding-left: 300px;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
 }
+
+.side-nav {
+    background: #161616;
+}
+
+ul.side-nav.fixed li:focus {
+    background-color: white;
+}
+
+.side-nav li  {
+    line-height: 30px;
+}
+
+.side-nav li:first-child span {
+    color: #f5f5f5;
+    display: inline-block;
+    font-size: large;
+}
+
+#profile-img {
+    height: 250px;
+    width: 250px;
+    margin: 15px auto 0 auto;
+}
+
+ul.logos {
+    margin-top: 20px;
+    width: 75%;
+}
+
+ul.logos li a{
+    padding: 0;
+    text-align: center !important;
+}
+
+.logos li a i{
+    color: #adadad;
+    width: 100%;
+}
+
+.text-home, .text-home i {
+    color: #ffc400 !important;
+}
+
+.text-about, .text-about i {
+    color: #0288d1 !important;
+}
+
+.text-projects, .text-projects i {
+    color: #e53935 !important;
+}
+
+.text-contact, .text-contact i {
+    color: #4caf50 !important;
+
+}
+
+.text-tech, .text-tech i {
+    color: #9575cd !important;
+}
+
+/*Home*/
+.home-page {
+    min-height: 100%;
+    width: 100%;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .btn-dark:hover,
@@ -57,145 +130,15 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
 
-hr.small {
-    max-width: 100px;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    transform: translateX(250px);
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/background.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* About */
-
-.about {
-    padding: 50px 0;
-}
-
-div.container.about-img{
-    float: left;
-    width: 40%;
-    margin-bottom: 30px;
-
-}
-
+/*About*/
 img.profile-img {
-    float: left;
     width: 400px;
 }
 
+/*Projects*/
 
-.about-info{
-    float: right;
-    width: 60%;
-    text-align: left;
-    margin-bottom: 80px;
-}
-
-
-
-/* Technolgies */
-
-.technologies {
-    padding: 50px 0;
-    background-color: #303030;
-}
+/*Technologies*/
 
 /* Makes Devicons bigger */
 
@@ -230,119 +173,20 @@ td {
     margin-top: 4px;
     border-radius: 6px;
 }
+/*Contact*/
 
-.pretty:hover .hoverText {
-    visibility: visible;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+/*Footer*/
+footer, .page-footer {
+    background: #161616;
 }
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/portfolio.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-    background-color: #303030;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-
-/* Footer */
-
-footer {
-    padding: 40px 0;
-    color: #293952;
-}
-
-
-#resume{
-    font-size: 24px;
-    color: #293952;
-}
-
-#to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
-
-#videoPlayer {
-    padding-top: 50px;
-}
-
-
 
 /*Media Queries*/
 @media (max-width: 1200px) {
-    div.container.about-img{
-        float: left;
-        width: 40%;
-        margin-bottom: 50px;
 
-    }
-
-    img.profile-img{
-        width: 400px;
-    }
-
-    .about-info{
-        float: right;
-        width: 60%;
-        text-align: left;
-        margin-bottom: 30px;
-    }
 }
 
 @media (max-width: 990px) {
-    div.container.about-img{
-        width: 100%;
-        margin-bottom: 30px;
-        align: middle;
-    }
-
-    img.profile-img{
-        width: 100%;
-    }
-
-    .about-info{
-        float: right;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 30px;
+    footer, .page-footer {
+        padding-left: 0 !important;
     }
 }

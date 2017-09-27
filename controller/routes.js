@@ -9,7 +9,7 @@ router.get("/", function(req, res) {
     var hsObj = {
         title: "Home | Ryan Rodwell"
     };
-    res.render("index", hsObj);
+    res.render("home", hsObj);
 });
 
 router.get("/about", function(req, res) {
@@ -17,6 +17,27 @@ router.get("/about", function(req, res) {
         title: "About | Ryan Rodwell"
     };
     res.render("about", hbsObject);
+});
+
+router.get("/projects", function(req, res) {
+    var hbsObject = {
+        title: "Projects | Ryan Rodwell"
+    };
+    res.render("projects", hbsObject);
+});
+
+router.get("/contact", function(req, res) {
+    var hbsObject = {
+        title: "Contact | Ryan Rodwell"
+    };
+    res.render("contact", hbsObject);
+});
+
+router.get("/technologies", function(req, res) {
+    var hbsObject = {
+        title: "Technologies | Ryan Rodwell"
+    };
+    res.render("technologies", hbsObject);
 });
 
 router.get("/videos/advancedtrivia", function(req, res) {

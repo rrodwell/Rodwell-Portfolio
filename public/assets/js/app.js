@@ -1,6 +1,13 @@
 /**
  * Created by ryanrodwell on 5/24/17.
  */
+$(document).ready(function(){
+    $(".button-collapse").sideNav();
+
+    Handlebars.registerPartial('footer', '{{footer}}')
+});
+
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
     e.preventDefault();
@@ -12,21 +19,21 @@ $("#menu-toggle").click(function(e) {
     $("#sidebar-wrapper").toggleClass("active");
 });
 
-// Scrolls to the selected menu item on the page
-$(function() {
-    $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
+// // Scrolls to the selected menu item on the page
+// $(function() {
+//     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+//         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
+//             var target = $(this.hash);
+//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//             if (target.length) {
+//                 $('html,body').animate({
+//                     scrollTop: target.offset().top
+//                 }, 1000);
+//                 return false;
+//             }
+//         }
+//     });
+// });
 
 //#to-top button appears after scrolling
 var fixed = false;

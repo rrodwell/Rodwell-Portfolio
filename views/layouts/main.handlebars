@@ -19,6 +19,14 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
                 rel="stylesheet">
 
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Developer languages characters -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
         <!--Stylesheet-->
         <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -31,9 +39,44 @@
     </head>
 
     <body>
+        <header>
+            <!--Navbar-->
+            <div class="container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+            </div>
+
+            <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
+                <li class="logo center"><img class="circle" id="profile-img" src="./assets/img/headshot.jpg"><span href="/">Ryan Rodwell</span></li>
+                <li class="bold">
+                    <ul class="logos row">
+                        <li class="col s3">
+                            <a href="https://www.linkedin.com/in/ryanrodwell/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="col s3">
+                            <a href="https://github.com/rrodwell" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="col s3">
+                            <a href="https://stackoverflow.com/users/7412922/ryan-rodwell" target="_blank"><i class="fa fa-stack-overflow fa-fw fa-3x"></i></a>
+                        <li class="col s3">
+                            <a href="https://twitter.com/rrodwell85" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="bold"><a href="/" class="waves-effect waves-yellow text-home"><i class="material-icons">home</i>Home</a></li>
+                <li class="bold"><a href="/about" class="waves-effect waves-light text-about"><i class="material-icons">description</i>About</a></li>
+                <li class="bold"><a href="/projects" class="waves-effect waves-red text-projects"><i class="material-icons">code</i>Projects</a></li>
+                <li class="bold"><a href="/technologies" class="waves-effect waves-purple text-tech"><i class="material-icons">desktop_mac</i>Technologies</a></li>
+                <li class="bold"><a href="/contact" class="waves-effect waves-green text-contact"><i class="material-icons">drafts</i>Contact</a></li>
+            </ul>
+        </header>
+
+        <main>
+            {{{ body }}}
+        </main>
 
 
-        {{{ body }}}
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 
         <!--jQuery-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
