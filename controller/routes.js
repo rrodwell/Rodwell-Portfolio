@@ -6,7 +6,17 @@ var router = express.Router();
 var path = require("path");
 
 router.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    var hsObj = {
+        title: "Home | Ryan Rodwell"
+    };
+    res.render("index", hsObj);
+});
+
+router.get("/about", function(req, res) {
+    var hbsObject = {
+        title: "About | Ryan Rodwell"
+    };
+    res.render("about", hbsObject);
 });
 
 router.get("/videos/advancedtrivia", function(req, res) {
